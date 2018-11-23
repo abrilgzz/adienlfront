@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADIENL Asociación de Deportes Invernales del Estado de Nuevo León, A.C.</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+<body class="size-1140 align-content-left">
+  <div class="line">
+    <div id="content-wrapper">
+      <!-- LEFT COLUMN -->
+      <div id="navBar"></div>
+      <!-- RIGHT COLUMN -->
+      <div class="s-12 m-8 l-9">
+        <div class="box">
+          <!-- HEADER -->
+          <form class="customform" method="post" action="#">
+
+            <div class="form-title-row">
+              <h2>Afiliación</h2>
+            </div>
+
+            <span>E-mail </span>
+            <p>
+              <input type="email"
+              name ="email"
+              data-validation="email" ></p>
+
+            <span>Contraseña </span>
+            <p>
+              <input type="password"
+              name="pass_confirmation"
+              data-validation="strength"
+              data-validation-strength="2"></p>
+
+            <span>Confirmar contraseña </span>
+            <p>
+              <input type="password"
+              name="pass"
+              data-validation="confirmation"></p>
+
+
+            <span>Nombres </span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-regexp="^(a-zA-Z]+)$"
+              data-validation-length="3-12"
+              data-validation-error-msg="Introduce un nombre válido"
+              name="first_name"></p>
+
+            <span>Apellidos </span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-regexp="^(a-zA-Z]+)$"
+              data-validation-length="3-30"
+              data-validation-error-msg="Introduce un apellido válido"
+              name="last_name"></p>
+
+            <span>Fecha de Nacimiento</span>
+            <p>
+              <input type="text"
+              name="dob"></p>
+
+            <span>Género</span>
+            <p>
+              <input type="radio" name="gender" value="male"> Otro<br>
+              <input type="radio" name="gender" value="female"> Femenino<br>
+              <input type="radio" name="gender" value="other"> Masculino
+            </p>
+
+            <span>Fotografía reciente</span>
+            <p>
+              <input type="file"
+              data-validation="mime size required"
+              data-validation-allowing="jpg, png"
+              data-validation-max-size="300kb"
+              data-validation-error-msg-required="Selecciona una imagen"
+              name="profileImage"></p>
+
+            <span>Domicilio (Número, Calle, Colonia)</span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-length="3-12"
+              data-validation-error-msg="Introduce un domicilio válido"
+              name="address"></p>
+
+            <span>Ciudad</span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-regexp="^(a-zA-Z]+)$"
+              data-validation-length="3-12"
+              data-validation-error-msg="Introduce una ciudad válida"
+              name="city"></p>
+
+            <span>Código Postal</span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-regexp="^([0-9]+)$"
+              data-validation-length="5-5"
+              data-validation-error-msg="Introduce un código postal válido"
+              name="postal_code"></p>
+
+            <span>Celular</span>
+            <p>
+              <input type="text"
+              data-validation="custom"
+              data-validation-regexp="^([0-9]+)$"
+              data-validation-length="10-12"
+              data-validation-error-msg="Introduce un número de celular válido"
+              name="phone_number"></p>
+
+
+            <span>Categoría 2018</span>
+            <p>
+              <select name="dropdown">
+                <option>Pre-Infantil A</option>
+                <option>Pre-Infantil B</option>
+                <option>Infantil A</option>
+                <option>Infantil B</option>
+                <option>Infantil C</option>
+                <option>Juvenil A</option>
+                <option>Juvenil B</option>
+                <option>Juvenil C</option>
+                <option>Mayor</option>
+                <option>Adulto</option>
+                <option>Única </option>
+              </select>
+            </p>
+
+            <span>Último nivel aprobado</span>
+            <p>
+              <select name="dropdown">
+                <option>Debutantes I</option>
+                <option>Debutantes II</option>
+                <option>Pre-Básicos</option>
+                <option>Básicos</option>
+                <option>Pre-Preliminar</option>
+                <option>Preliminar</option>
+                <option>Intermedios I</option>
+                <option>Intermedios II</option>
+                <option>Novicios</option>
+                <option>Avanzados I</option>
+                <option>Avanzados II</option>
+              </select>
+            </p>
+
+            <span>Club al que perteneces</span>
+            <p>
+              <select name="dropdown">
+                <option>Ice Complex</option>
+                <option>Deportivo San Agustín</option>
+                <option>Deportivo Alpino Chipinque<</option>
+                <option>Ciel Fundidora</option>
+              </select>
+            </p>
+
+            <span>Me estoy afiliando como:</span>
+            <p>
+              <input type="radio" name="user_type" value="skater"> Patinador<br>
+              <input type="radio" name="user_type" value="coach"> Entrenador<br>
+              </select>
+            </p>
+
+            <div class="form-row">
+              <button type="submit">Completar Afiliación</button>
+            </div>
+          </form>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<img id="background" class="hide-s" src="img/background.jpg" alt="">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script type="text/javascript" src="js/responsee.js"></script>
+<script type="text/javascript" src="js/registerScript.js"></script>
+<script type="text/javascript" src="js/navBarFooter.js"></script>
+</body>
+</html>
